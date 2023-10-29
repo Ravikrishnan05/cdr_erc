@@ -8,4 +8,9 @@ How we decided on them is the question to be answered
 |*| requirements -take reference from arc 
 |*| verification
 |*| validation
+power requirement of power sources (24V, 12V, 5V) to which all the components are connected in parallel.
+Parallel connections are chosen to ensure that in the event of one component's failure, the remaining connections continue to function normally.
+  //write about which battery is used for what purposes
+  
+
 
