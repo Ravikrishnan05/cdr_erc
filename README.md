@@ -1,5 +1,9 @@
 # cdr_erc
 my topic is power electronics
+//procedure for documentation
+what ever they have asked just copy paste it and start answer the the questons
+//go to chapter 3 
+//extract requirement from chapter 3
 * You must address the following minimum requirements: [size, weight, E-STOP, communications, and safe carry]
 * Example, when on power electronics node, replaceable batteries and kill switch can be listed under that node as requirements
 (along with numerous other requirements of that subsystem ofc)
