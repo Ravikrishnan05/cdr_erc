@@ -59,16 +59,7 @@ Components of the Rover that are part of power electronics:
 - LiPo battery.
 - Stereo camera powered by Jetson itself.
 - Master controller for manipulator.
-
-# finial document 
-The power requirements of rover is met through two different voltage lines (18V,12v and 5V), to which all the components are connected in parallel.
-The 18V line will be used for Motors for the drive control system,12v Linear actuator on the manipulator,Motor for controlling steering mechanism,
-(18-24 boost)Antennas,(18-19 boost)-Orin.A 5V line will be used To provide power for LoRa (Long Range) module,motor Encoders and Relay switches used in the power electronics architecture.
-
-## saftey
-* To all batteries Battery Management System (BMS) is connected to ensure that the battery is protected from overcharging and from reverse currrent.
-* Electrical components were arranged considering proper ventilation for heat exchange.The system is designed such that the rover can cease operations through both a physical kill switch as well as remotely through relays which are controlled using microcontrollers, in case of emergencies.
-## power saving 
+- ## power saving 
 The mobility control unit also features
 two power-saving modes, the Power Saving Mode and the Ultra Power Saving Mode, which reduce the
 speed of all wheels to conserve battery power. The Ultra Power Saving Mode is activated when the
@@ -80,3 +71,24 @@ we have mechanism and we will do it
 *
 # min req 
 battery and how much volt and for what
+
+# finial document 
+The power requirements of rover is met through two different voltage lines (18V,12v and 5V), to which all the components are connected in parallel.
+The 18V line will be used for Motors for the drive control system,12v Linear actuator on the manipulator,Motor for controlling steering mechanism,
+for Antennas 18v line is booset to 24v,for Orin 18v line is boosted to 19v.A 5V line will be used To provide power for LoRa (Long Range) module,motor Encoders and Relay switches used in the power electronics architecture.
+
+## saftey
+* To all batteries Battery Management System (BMS) is connected to ensure that the battery is protected from overcharging and from reverse currrent.
+* Electrical components were arranged considering proper ventilation for heat exchange.The system is designed such that the rover can cease operations through both a physical kill switch as well as remotely through relays which are controlled using microcontrollers, in case of emergencies.
+## Components of the Rover that are part of power electronics:
+//Modified 
+- 4 speed control motors with a no load current of 2.7Amps and stall current of 130Amps
+- 4 speed control motor drivers with RMS current of 30A and peak current of 80A.
+- Nvidia AGX orin processing unit with RMS current of 6A.
+- LoRa module +with rms current of 4.2mA.
+- 4 stm32 microcontrollers with max current with 8.4mA. 
+- LiPo batteries.
+- Stereo camera powered by Nvidia AGX orin.
+- Master controller for manipulator.
+
+
